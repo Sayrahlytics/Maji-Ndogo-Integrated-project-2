@@ -8,6 +8,7 @@ SELECT
             '@ndogowater.gov') AS new_email
 FROM
     employee;
+
 -- --Updating the email column 
 
 UPDATE employee
@@ -27,6 +28,8 @@ SET phone_number= trim(phone_number)
 ;
 -- checking to see if the changes has been implemented
 select length(phone_number) from employee;
+
+
 
 
 -- HONOURING THE WORKERS
@@ -51,6 +54,8 @@ limit 3;
 select  employee_name, email, phone_number
 from employee
 where assigned_employee_id IN (1, 30, 34);
+
+
 
 -- ANALYZING LOCATION
 -- Create a query that counts the number of records per town
@@ -285,6 +290,6 @@ hour_of_day
 ORDER BY
 hour_of_day;
 
--- We are trying to create a pivot table in the above. Wheer we have a particular day of the week, it checks the time in queue for a specific
---  hour of the day and calculates the averag. It does this for all the  hours for a day as shown in the visists table
--- e.g 2021-01-01 is a friday, add all the time in  queue and divide by the total number for 9am and also for other years e.g 2023
+-- We are trying to create a pivot table in the above. Where we have a particular day of the week, it checks the time in queue for a specific
+--  hour of the day and calculates the average. It does this for all the  hours for a day as shown in the visits table
+-- e.g 2021-01-01 is a Friday, add all the times in  queue and divide by the total number for 9am and also for other years e.g 2023
