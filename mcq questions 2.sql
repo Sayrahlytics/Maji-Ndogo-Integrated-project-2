@@ -27,7 +27,7 @@ group by assigned_employee_id
 order by number_of_visit asc
 limit 3;
 
--- 4Using the employee id to get the employees details to be sent for award
+-- Using the employee id to get the employees details to be sent for award
 
 select  employee_name, email, phone_number
 from employee
